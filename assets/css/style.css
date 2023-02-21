@@ -2,6 +2,13 @@
 body{
     font-family: 'Shantell Sans', cursive;
 }
+
+/* .container-wrapper{} */
+
+.container-wrapper--red{
+    background-color: #f05f40;
+    color: white;
+}
 .alert-container .col-12 {
     padding-left: 0;
     padding-right: 0;
@@ -15,7 +22,7 @@ body{
     border: 1px solid transparent;
     border-radius: 0;
 }
-.alert-container{}
+/* .alert-container{} */
 
 .callout-container{
     height: 100vh;
@@ -41,10 +48,24 @@ body{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.quotes-container{}
+/* .quotes-container{}
 
-.features-container{}
+.features-container{} */
 
+/* Page headers */
+.page-header{
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+
+.page-header h2{
+    margin-top: 0;
+}
+
+.quotes .page-header{
+    margin-bottom: 25px;
+}
 /* Block dividers */
 .block-divider {
     width: 75px;
@@ -56,11 +77,17 @@ body{
 .block-divider--orange {
     background-color: #f05f40;
 }
-
+.block-divider--white{
+    background-color: white;
+}
 .block-divider--short {
     width: 35px;
 }
-
+/* Content Containers */
+.content-container{
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
 /* Navbar */
 .navalert-container{
     position: absolute;
@@ -89,10 +116,12 @@ body{
 .navbar .navbar-nav a{
     font-weight: bold;
 }
+
 /* Jumbotron */
 .jumbotron{
     background-color: transparent;
 }
+
 .jumbotron-header{
     color: white;
     font-weight: bold;
@@ -131,4 +160,26 @@ body{
     background-color: #df4929;
     border-color: #df4929;
     color: white;
+}
+
+.feature{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature i{
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+    /* For their own line, just change d-sm-inline to block */
+}
+
+.feature .btn{
+    background-color: white;
+    border-color: white;
+    border-radius: 15px;
+    min-width: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #f05f40;
 }
